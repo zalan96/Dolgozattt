@@ -22,7 +22,7 @@ namespace Dolgozat
 			{
 				osszeg += etel.Ar;
 			}
-			return osszeg;
+			return osszeg; 
 		}
 	}
 }
