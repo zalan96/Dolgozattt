@@ -27,7 +27,7 @@ namespace Dolgozat
 				vegosszeg += rendeles.Ar;
 			}
 			Rendelesek.Clear();
-			return vegosszeg;
+			return vegosszeg; 
 		}
 	}
 }
