@@ -22,7 +22,7 @@
 			etterem.HozzaadRendeles(rendeles1);
 
 			FajlKezelo.MentesMenu(etterem.Menu, "menu.txt");
-			FajlKezelo.MentesRendelesek(etterem.Rendelesek, "rendelesek.txt");
+			FajlKezelo.MentesRendelesek(etterem.Rendelesek, "rendelesek.txt"); 
 		}
 	}
 }
