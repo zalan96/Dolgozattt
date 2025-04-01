@@ -17,7 +17,12 @@ namespace Dolgozat
 		}
 		public decimal Vegosszeg()
 		{
-			return RendeltEtelek.Sum(e => e.Ar);
+			decimal osszeg = 0;
+			foreach (var etel in RendeltEtelek)
+			{
+				osszeg += etel.Ar;
+			}
+			return osszeg;
 		}
 	}
 }

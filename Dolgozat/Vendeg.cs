@@ -21,7 +21,11 @@ namespace Dolgozat
 		}
 		public decimal Fizet()
 		{
-			decimal vegosszeg = Rendelesek.Sum(r => r.Ar);
+			decimal vegosszeg = 0;
+			foreach (var rendeles in Rendelesek)
+			{
+				vegosszeg += rendeles.Ar;
+			}
 			Rendelesek.Clear();
 			return vegosszeg;
 		}
