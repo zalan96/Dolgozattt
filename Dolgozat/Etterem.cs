@@ -16,12 +16,10 @@ namespace Dolgozat
 			Menu = new List<MenuElem>();
 			Rendelesek = new List<Rendeles>();
 		}
-
 		public void HozzaadMenuElem(MenuElem elem)
 		{
 			Menu.Add(elem);
 		}
-
 		public void HozzaadRendeles(Rendeles rendeles)
 		{
 			Rendelesek.Add(rendeles);

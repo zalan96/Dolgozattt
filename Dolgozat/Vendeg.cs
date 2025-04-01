@@ -10,18 +10,15 @@ namespace Dolgozat
 	{
 		public string Nev { get; set; }
 		public List<MenuElem> Rendelesek { get; set; }
-
 		public Vendeg(string nev)
 		{
 			Nev = nev;
 			Rendelesek = new List<MenuElem>();
 		}
-
 		public void Rendel(MenuElem elem)
 		{
 			Rendelesek.Add(elem);
 		}
-
 		public decimal Fizet()
 		{
 			decimal vegosszeg = Rendelesek.Sum(r => r.Ar);

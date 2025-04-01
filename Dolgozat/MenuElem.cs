@@ -8,7 +8,6 @@ namespace Dolgozat
 {
 	internal class MenuElem
 	{
-
 			public string Nev { get; set; }
 			public decimal Ar { get; set; }
 			public string Kategoria { get; set; }
@@ -19,6 +18,5 @@ namespace Dolgozat
 				Ar = ar;
 				Kategoria = kategoria;
 			}
-		
 	}
 }
