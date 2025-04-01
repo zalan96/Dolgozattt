@@ -5,7 +5,7 @@
 		static void Main(string[] args)
 		{
 			Etterem etterem = new Etterem();
-			etterem.Menu = FajlKezelo.MentesMenu();
+			etterem.Menu = FajlKezelo.BetoltMenu("menu.txt");
 
 			Vendeg vendeg1 = new Vendeg("Kiss Péter");
 
@@ -15,15 +15,14 @@
 			etterem.HozzaadMenuElem(burger);
 			etterem.HozzaadMenuElem(cola);
 
-			etterem.HozzaadRendeles();
-
 			vendeg1.Rendel(burger);
 			vendeg1.Rendel(cola);
 
-			etterem.UjRendeles(vendeg1);
+			Rendeles rendeles1 = new Rendeles(vendeg1.Nev, vendeg1.Rendelesek);
+			etterem.HozzaadRendeles(rendeles1);
 
-			FajlKezelo.MentesMenu(etterem.Menu);
-			FajlKezelo.MentesRendelesek(etterem.Rendelesek);
+			FajlKezelo.MentesMenu(etterem.Menu, "menu.txt");
+			FajlKezelo.MentesRendelesek(etterem.Rendelesek, "rendelesek.txt");
 		}
 	}
 }
